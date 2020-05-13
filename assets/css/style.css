@@ -1,0 +1,90 @@
+:root {
+  font-size: 10px;
+}
+.search {
+  margin-top: 40px;
+  margin-left: 70px;
+  font-size: 3rem;
+}
+
+#spinner {
+  visibility: hidden;
+  width: 80px;
+  height: 80px;
+
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid blue;
+  border-radius: 100%;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#spinner.show {
+  visibility: visible;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: lightgrey;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.container {
+  background: white;
+  width: 900px;
+  margin: 100px auto;
+  border-radius: 10px;
+  border: 1px solid grey;
+  padding: 10px;
+}
+
+.agenda {
+  list-style: none;
+  margin: 10px;
+}
+
+.agenda .employee {
+  background-color: lightblue;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+}
+
+.employee .name {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.employee .remove {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: red;
+}
+
+.remove:hover {
+  cursor: pointer;
+}

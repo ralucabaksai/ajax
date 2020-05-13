@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employees</title>
+
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/main.js"></script>
+  </head>
+  <body>
+    <div id="spinner"></div>
+    <section class="search">
+      <label for="search">Search by employee id:</label>
+      <input type="text" id="search" name="search" />
+      <button>Search</button>
+    </section>
+    <section class="container">
+      <header>
+        <h1>Employees Agenda</h1>
+      </header>
+      <main>
+        <ul class="agenda">
+          <!-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes -->
+          <!-- <li class="employee" data-id="1">
+          <div class="name">John Snow</div>
+          <p><span>Age: 27</span> <span>Salary: 27</span></p>
+          <button class="remove">X</button>
+        </li> -->
+        </ul>
+
+        <!-- create the inputs here -->
+        <!-- if you want to use <form> make sure you listen for submit event on <form> and call event.preventDefault() -->
+        <form>
+          <button class="add-employee">+</button>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" />
+          <label for="age">Age:</label>
+          <input type="text" id="age" name="age" />
+          <label for="salary">Salary:</label>
+          <input type="salary" id="salary" name="salary" />
+        </form>
+      </main>
+    </section>
+  </body>
+</html>
